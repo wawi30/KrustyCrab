@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KrustyCrab</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-color-primary text-color-white tracking-wider">
+    <main>
+      <section
+        id="home"
+        class="relative bg-center bg-cover bg-no-repeat"
+        style="background-image: url(resource/me.jpg)"
+      >
+        <div
+          class="bg-black w-full h-full pt-20"
+          style="background-color: rgba(0, 0, 0, 0.7)"
+        >
+          <header class="fixed top-0 left-0 right-0 z-50">
+            <nav class="container flex justify-between items-center">
+              <div class="py-5 text-color-secondary font-bold text-3xl">
+                <a href="#home" style="color: rgb(143, 134, 118)">
+                  <span class="text-color-white">Krusty</span>Crab.
+                </a>
+              </div>
+              <div>
+                <ul class="hidden lg:flex items-center space-x-6">
+                  <li>
+                    <a
+                      href="index.html"
+                      class="hover:text-color-it ease-in duration-200"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="product.html"
+                      class="hover:text-color-it ease-in duration-200"
+                      >Menu</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="me.html"
+                      class="hover:text-color-it ease-in duration-200"
+                      >Tentang Kami</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Mobile screen  -->
+              <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+
+              <div
+                id="menu"
+                class="hidden bg-color-primary-dark h-[100vh] absolute inset-0"
+              >
+                <ul class="h-full grid place-items-center py-20">
+                  <li>
+                    <a
+                      id="hLink"
+                      href="index.html"
+                      class="hover:text-color-it ease-in duration-200"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      id="hLink"
+                      href="product.html"
+                      class="hover:text-color-it ease-in duration-200"
+                      >Menu</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      id="hLink"
+                      href="me.html"
+                      class="hover:text-color-it ease-in duration-200"
+                      >Tentang Kami</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          <div class="h-[85vh]">
+            <div class="container py-20">
+              <div class="flex flex-col items-center z-20 md:flex-row">
+                <div class="text-center md:text-left md:w-1/2 md:ml-20">
+                  <h4 class="font-bold text-color-it mb-4 text-4xl">
+                    KrustyCrab
+                  </h4>
+                  <h1 class="title mb-4">
+                    Restaurant Humberger
+                    <p>#1 di Indonesia</p>
+                  </h1>
+                  <p class="leading-relaxed mb-10">
+                    Restaurant yang sudah berdiri sejak 2001 dengan pengalaman
+                    23 tahun berjualan Humberger. Membuka cabang pertama di kota
+                    Banyuwangi dan kini memiliki hampir 100 cabang yang tersebar
+                    di seluruh kota Indonesia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container py-20">
+          <div class="text-center m-auto mb-20 md:w-1/2">
+            <h4 class="font-bold text-color-it mb-4 text-2xl">
+              Kamu Punya Pertanyaan
+            </h4>
+            <h1 class="title">Kirimkan Pada Kami</h1>
+          </div>
+
+          <form>
+            <div class="w-full m-auto text-center md:w-2/3">
+              <div
+                class="text-color-primary-dark grid gap-6 mb-6 md:grid-cols-2"
+              >
+                <input
+                  type="text"
+                  class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                  placeholder="Nama"
+                />
+
+                <input
+                  type="email"
+                  class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                  placeholder="Email"
+                />
+
+                <input
+                  type="tel"
+                  class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                  placeholder="No Hp"
+                />
+              </div>
+
+              <textarea
+                rows="4"
+                class="text-color-primary-dark bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                placeholder="Pesan"
+              ></textarea>
+
+              <button class="btn mt-10 !bg-color-it">Kirim Pesan</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="footer">
+        <div class="bg-color-primary-dark relative">
+          <div class="container py-10">
+            <div class="pb-10 flex items-center justify-center text-center">
+              <div class="space-y-6 w-[30%] flex flex-col items-center">
+                <div class="flex gap-4 items-center">
+                  <p>Follow Us</p>
+                  <i
+                    class="fa-brands fa-facebook-f cursor-pointer hover:text-color-secondary"
+                  ></i>
+                  <i
+                    class="fa-brands fa-twitter cursor-pointer hover:text-color-secondary"
+                  ></i>
+                  <i
+                    class="fa-brands fa-youtube cursor-pointer hover:text-color-secondary"
+                  ></i>
+                  <i
+                    class="fa-brands fa-instagram cursor-pointer hover:text-color-secondary"
+                  ></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center pt-10 border-t border-color-gray">
+              <p>2024 &copy; Dzawawi. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const navbar = document.querySelector("header");
+
+      window.onscroll = () => {
+        if (window.scrollY > 100) {
+          navbar.classList.add("bg-color-primary-dark");
+          navbar.classList.add("border-b");
+          navbar.classList.add("border-color-gray");
+        } else {
+          navbar.classList.remove("bg-color-primary-dark");
+          navbar.classList.remove("border-b");
+          navbar.classList.remove("border-color-gray");
+        }
+      };
+
+      // Mobile menu
+      const hamburger = document.querySelector("#hamburger");
+      const menu = document.querySelector("#menu");
+      const hLink = document.querySelectorAll("#hLink");
+      const faSolid = document.querySelector(".fa-solid");
+
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        faSolid.classList.toggle("fa-xmark");
+      });
+
+      hLink.forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+          faSolid.classList.toggle("fa-xmark");
+        });
+      });
+    </script>
+  </body>
+</html>

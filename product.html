@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KrustyCrab</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-color-primary text-color-white tracking-wider">
+    <main>
+      <section
+        id="home"
+        class="relative bg-center bg-cover bg-no-repeat"
+        style="background-image: url(resource/bg.jpg)"
+      >
+        <div
+          class="bg-black w-full h-full pt-20"
+          style="background-color: rgba(0, 0, 0, 0.5)"
+        >
+          <header class="fixed top-0 left-0 right-0 z-50">
+            <nav class="container flex justify-between items-center">
+              <div class="py-5 text-color-secondary font-bold text-3xl">
+                <a href="#home" style="color: rgb(143, 134, 118)">
+                  <span class="text-color-white">Krusty</span>Crab.
+                </a>
+              </div>
+              <div>
+                <ul class="hidden lg:flex items-center space-x-6">
+                  <li>
+                    <a
+                      href="index.html"
+                      class="hover:text-color-it ease-in duration-200"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="product.html"
+                      class="hover:text-color-it ease-in duration-200"
+                      >Menu</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="me.html"
+                      class="hover:text-color-it ease-in duration-200"
+                      >Tentang Kami</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Mobile screen  -->
+              <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+
+              <div
+                id="menu"
+                class="hidden bg-color-primary-dark h-[100vh] absolute inset-0"
+              >
+                <ul class="h-full grid place-items-center py-20">
+                  <li>
+                    <a
+                      id="hLink"
+                      href="index.html"
+                      class="hover:text-color-it ease-in duration-200"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      id="hLink"
+                      href="product.html"
+                      class="hover:text-color-it ease-in duration-200"
+                      >Menu</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      id="hLink"
+                      href="me.html"
+                      class="hover:text-color-it ease-in duration-200"
+                      >Tentang Kami</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          <div class="h-[85vh]">
+            <div class="container py-20">
+              <div class="flex flex-col items-center z-20 md:flex-row">
+                <div class="text-center md:text-left md:w-1/2 md:ml-20">
+                  <h4 class="font-bold text-color-it mb-4 text-4xl">
+                    #1 Restaurant in Indonesia
+                  </h4>
+                  <h1 class="title mb-4">Menu Restoran Kami</h1>
+                  <p class="leading-relaxed mb-10">
+                    Menu yang kami sajikan dibuat dengan sepenuh hati, karena hati tidak bisa bohong 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container py-10">
+            <div class="text-center m-auto mb-20 md:w-1/2">
+              <!-- <h4 class="font-bold text-color-gray mb-4">Superiority Bitcoin</h4> -->
+              <h1 class="title text-color-white">Menu Kami</h1>
+            </div>
+
+            <div
+              class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8 min-h-[600px]"
+            >
+              <!-- card no 1 -->
+              <div
+                class="border-2 border-solid border-color-gray rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200 bg-cover"
+                style="
+                  background-image: url(resource/eiliv.jpg);
+                  background-position: 200%;
+                "
+              >
+                <div
+                  class="bg-black/[.5] h-full p-5 rounded-2xl flex flex-col items-start justify-end"
+                >
+                  <h3 class="text-3xl font-bold py-2">Rp 15.000</h3>
+                  <p class="leading-relaxed text-lg">Burger Jumbo</p>
+                </div>
+              </div>
+
+              <!-- card no 2 -->
+              <div
+                class="border-2 border-solid border-color-gray rounded-2xl bg-no-repeat cursor-pointer hover:bg-color-primary-dark ease-in duration-200 bg-cover"
+                style="
+                  background-image: url(resource/eiliv1.jpg);
+                  background-position: 0px -180px;
+                "
+              >
+                <div
+                  class="bg-black/[.5] h-full p-5 rounded-2xl flex flex-col items-start justify-end"
+                >
+                  <h3 class="text-3xl font-bold py-2">Rp 18.000</h3>
+                  <p class="leading-relaxed text-lg">Burger Daging Sapi</p>
+                </div>
+              </div>
+
+              <!-- card no 3 -->
+              <div
+                class="border-2 border-solid border-color-gray rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200 bg-cover"
+                style="
+                  background-image: url(resource/chad.jpg);
+                  background-position: 200%;
+                "
+              >
+                <div
+                  class="bg-black/[.5] h-full p-5 rounded-2xl flex flex-col items-start justify-end"
+                >
+                  <h3 class="text-3xl font-bold py-2">Rp 12.000</h3>
+                  <p class="leading-relaxed text-lg">Burger Keju</p>
+                </div>
+              </div>
+              <!-- card no 4 -->
+              <div
+                class="border-2 border-solid border-color-gray rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200 bg-cover"
+                style="
+                  background-image: url(resource/Esjeruk.jpg);
+                  background-position: 200%;
+                "
+              >
+                <div
+                  class="bg-black/[.5] h-full p-5 rounded-2xl flex flex-col items-start justify-end"
+                >
+                  <h3 class="text-3xl font-bold py-2">Rp 3.000</h3>
+                  <p class="leading-relaxed text-lg">Es Jeruk</p>
+                </div>
+              </div>
+              <!-- card no 5 -->
+              <div
+                class="border-2 border-solid border-color-gray rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200 bg-cover"
+                style="
+                  background-image: url(resource/kentang.jpg);
+                  background-position: 200%;
+                "
+              >
+                <div
+                  class="bg-black/[.5] h-full p-5 rounded-2xl flex flex-col items-start justify-end"
+                >
+                  <h3 class="text-3xl font-bold py-2">Rp 6.000</h3>
+                  <p class="leading-relaxed text-lg">Kentang Goreng</p>
+                </div>
+              </div>
+              <!-- card no 6 -->
+              <div
+                class="border-2 border-solid border-color-gray rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200 bg-cover"
+                style="
+                  background-image: url(resource/pudding.jpg);
+                  background-position: 200%;
+                "
+              >
+                <div
+                  class="bg-black/[.5] h-full p-5 rounded-2xl flex flex-col items-start justify-end"
+                >
+                  <h3 class="text-3xl font-bold py-2">Rp 7.000</h3>
+                  <p class="leading-relaxed text-lg">Pudding Susu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container py-20">
+          <div class="text-center m-auto mb-20 md:w-1/2">
+            <h4 class="font-bold text-color-it mb-4 text-2xl">
+              Kamu Punya Pertanyaan
+            </h4>
+            <h1 class="title">Kirimkan Pada Kami</h1>
+          </div>
+
+          <form>
+            <div class="w-full m-auto text-center md:w-2/3">
+              <div
+                class="text-color-primary-dark grid gap-6 mb-6 md:grid-cols-2"
+              >
+                <input
+                  type="text"
+                  class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                  placeholder="Nama"
+                />
+
+                <input
+                  type="email"
+                  class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                  placeholder="Pesan"
+                />
+
+                <input
+                  type="tel"
+                  class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                  placeholder="No Hp"
+                />
+              </div>
+
+              <textarea
+                rows="4"
+                class="text-color-primary-dark bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                placeholder="Message"
+              ></textarea>
+
+              <button class="btn mt-10 !bg-color-it">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="footer">
+        <div class="bg-color-primary-dark relative">
+          <div class="container py-10">
+            <div class="pb-10 flex items-center justify-center text-center">
+              <div class="space-y-6 w-[30%] flex flex-col items-center">
+                <div class="flex gap-4 items-center">
+                  <p>Follow Us</p>
+                  <i
+                    class="fa-brands fa-facebook-f cursor-pointer hover:text-color-secondary"
+                  ></i>
+                  <i
+                    class="fa-brands fa-twitter cursor-pointer hover:text-color-secondary"
+                  ></i>
+                  <i
+                    class="fa-brands fa-youtube cursor-pointer hover:text-color-secondary"
+                  ></i>
+                  <i
+                    class="fa-brands fa-instagram cursor-pointer hover:text-color-secondary"
+                  ></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center pt-10 border-t border-color-gray">
+              <p>2024 &copy; Dzawawi. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const navbar = document.querySelector("header");
+
+      window.onscroll = () => {
+        if (window.scrollY > 100) {
+          navbar.classList.add("bg-color-primary-dark");
+          navbar.classList.add("border-b");
+          navbar.classList.add("border-color-gray");
+        } else {
+          navbar.classList.remove("bg-color-primary-dark");
+          navbar.classList.remove("border-b");
+          navbar.classList.remove("border-color-gray");
+        }
+      };
+
+      // Mobile menu
+      const hamburger = document.querySelector("#hamburger");
+      const menu = document.querySelector("#menu");
+      const hLink = document.querySelectorAll("#hLink");
+      const faSolid = document.querySelector(".fa-solid");
+
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        faSolid.classList.toggle("fa-xmark");
+      });
+
+      hLink.forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+          faSolid.classList.toggle("fa-xmark");
+        });
+      });
+
+      // testimonial
+      const userTexts = document.getElementsByClassName("user-text");
+      const userPics = document.getElementsByClassName("user-pic");
+
+      function showReview() {
+        for (userPic of userPics) {
+          userPic.classList.remove("active-pic");
+        }
+        for (userText of userTexts) {
+          userText.classList.remove("active-text");
+        }
+
+        let i = Array.from(userPics).indexOf(event.target);
+
+        userPics[i].classList.add("active-pic");
+        userTexts[i].classList.add("active-text");
+      }
+
+      const toggleBtn = document.getElementById("toggleBtn");
+
+      const card_1_front = document.querySelector("#card_1_front");
+      const card_1_back = document.querySelector("#card_1_back");
+
+      const card_2_front = document.querySelector("#card_2_front");
+      const card_2_back = document.querySelector("#card_2_back");
+
+      const card_3_front = document.querySelector("#card_3_front");
+      const card_3_back = document.querySelector("#card_3_back");
+
+      toggleBtn.addEventListener("change", () => {
+        card_1_front.classList.toggle("-rotate-y-180");
+        card_1_back.classList.toggle("rotate-y-180");
+
+        card_2_front.classList.toggle("-rotate-y-180");
+        card_2_back.classList.toggle("rotate-y-180");
+
+        card_3_front.classList.toggle("-rotate-y-180");
+        card_3_back.classList.toggle("rotate-y-180");
+      });
+    </script>
+  </body>
+</html>
